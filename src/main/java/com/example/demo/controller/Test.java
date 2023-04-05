@@ -1,13 +1,15 @@
 package com.example.demo.controller;
 
 import com.example.demo.databind.FormConvertBean;
-import com.example.demo.databind.RequestJson;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * @author wanghg
+ */
 @RestController
 @RequestMapping("/ggh")
-public class test {
+public class Test {
     @PostMapping("/tre")
     @ResponseBody
     public String test(@Validated ProjectBean obj){
